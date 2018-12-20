@@ -13,6 +13,7 @@ define( 'EATS_THEME_INC', EATS_THEME_PATH . 'includes/' );
 
 require_once EATS_THEME_INC . 'core.php';
 require_once EATS_THEME_INC . 'template-tags.php';
+require_once EATS_THEME_INC . 'svg.php';
 
 // Run the setup functions.
 EatsTheme\Core\setup();
