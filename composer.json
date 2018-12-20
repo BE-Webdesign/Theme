@@ -1,0 +1,26 @@
+{
+  "name": "10up/eats-theme",
+  "type": "wordpress-theme",
+  "authors": [
+    {
+      "name": "Author",
+      "email": "email@10up.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "EatsTheme\\": "includes/classes/"
+    }
+  },
+  "require-dev": {
+    "10up/wp_mock": "dev-dev",
+    "10up/phpcs-composer": "dev-master"
+  },
+  "scripts": {
+    "lint": "phpcs .",
+    "lint-fix": "phpcbf ."
+  }
+}
