@@ -7,12 +7,15 @@
 
 get_header(); ?>
 
+	<?php page_container_start(); ?>
+
 	<?php if ( have_posts() ) : ?>
 		<?php while ( have_posts() ) : the_post(); ?>
-			<h2><?php the_title(); ?></h2>
-			<?php the_content(); ?>
+			<?php get_template_part( 'partials/post', 'card' ); ?>
 		<?php endwhile; ?>
 	<?php endif; ?>
+
+	<?php page_container_end(); ?>
 
 <?php
 get_footer();

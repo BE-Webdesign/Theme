@@ -61,3 +61,38 @@ function adjust_brightness( $hex, $steps ) {
 	return $return;
 
 }
+
+/**
+ * Outputs opening tag for page content container.
+ *
+ * Needed for skip to content links. Outputs HTML no return type.
+ *
+ * @return void
+ */
+function page_container_start() {
+	?>
+	<main id="primary" class="container primary">
+	<?php
+}
+
+/**
+ * Page container closing tag.
+ *
+ * @return void
+ */
+function page_container_end() {
+	?>
+	</main>
+	<?php
+}
+
+/**
+ * Post excerpt generation.
+ *
+ * Currently used as a placeholder.
+ *
+ * @return void
+ */
+function post_excerpt() {
+	echo 'Content';
+}
