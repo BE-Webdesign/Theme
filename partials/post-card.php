@@ -2,10 +2,10 @@
 /**
  * Post card template.
  *
- * @package TrialTheme
+ * @package EatsTheme
  */
 
-use TrialTheme\SVG;
+use EatsTheme\SVG;
 
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'post-card' ); ?>>

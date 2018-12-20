@@ -2,10 +2,10 @@
 /**
  * SVG Icon loading functionality.
  *
- * @package TrialTheme
+ * @package EatsTheme
  */
 
-namespace TrialTheme\SVG;
+namespace EatsTheme\SVG;
 
 /**
  * Output SVG icon HTML for use in a page.
