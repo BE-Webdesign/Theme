@@ -6,6 +6,7 @@
  */
 
 ?>
+	<footer class="site-footer"><?php echo esc_html_e( 'Get some Eats!', 'eats-theme' ); ?></footer>
 	<?php wp_footer(); ?>
 	</body>
 </html>
