@@ -76,6 +76,18 @@ function scripts() {
 		true
 	);
 
+	wp_enqueue_script( 'google-fonts', 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js', false, '1.0', true );
+	wp_add_inline_script(
+		'google-fonts',
+		'WebFont.load({
+			google: {
+				families: [
+					"Raleway:400",
+				]
+			}
+		});'
+	);
+
 }
 
 /**
