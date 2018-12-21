@@ -2,7 +2,11 @@
 
 	--c-black: #000;
 	--c-white: #fff;
-	
+
+	/* Widths */
+	--container-width: 1200px;
+	--gutter-width: 20px;
+
 	/* Breakpoints */
 	@custom-media --bp-tiny ( min-width: 25em ); /* 400px */
 	@custom-media --bp-small ( min-width: 40.625em ); /* 650px */

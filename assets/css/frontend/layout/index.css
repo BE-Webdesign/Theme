@@ -1,1 +1,17 @@
 /* Layout */
+.container {
+	margin: 0 auto;
+	max-width: var(--container-width);
+}
+
+.primary {
+	min-height: 100vh;
+	padding: 0 var(--gutter-width);
+}
+
+@media (--bp-large) {
+
+	.primary {
+		padding: 0;
+	}
+}
