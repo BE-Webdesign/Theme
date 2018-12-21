@@ -7,6 +7,7 @@
 
 use EatsTheme\SVG;
 
+$header_tag = is_home() ? 'h1' : 'span';
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -29,7 +30,7 @@ use EatsTheme\SVG;
 					<a class="site-header__logo" href="<?php echo esc_url( home_url() ); ?>">
 						<?php SVG\icon( 'logo' ); ?>
 						<span class="screen-reader-text"><?php esc_html_e( 'Go to homepage', 'eats-theme' ); ?></span>
-						<span class="site-header__logo-text"><?php esc_html_e( 'Eats.', 'eats-theme' ); ?></span>
+						<<?php echo esc_html( $header_tag ); ?> class="site-header__logo-text"><?php esc_html_e( 'Eats.', 'eats-theme' ); ?></<?php echo esc_html( $header_tag ); ?>>
 					</a>
 					<div class="site-header__search-container">
 						<button class="site-header__search-toggle" id="site-header__search-toggle">
