@@ -46,7 +46,8 @@ function toggle( $el, $focusEl, $slideEl ) {
 	 * @param event {Event}
 	 */
 	function addExitListener( event ) {
-		if ( event.keyCode === 27 ) {
+		// Escape key pressing.
+		if ( 27 === event.keyCode ) {
 			$el.removeClass( 'open' );
 			$slideEl.removeClass( 'open' );
 
@@ -85,5 +86,5 @@ function toggle( $el, $focusEl, $slideEl ) {
 
 			return open;
 		},
-	}
+	};
 }
