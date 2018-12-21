@@ -1,11 +1,26 @@
 :root {
 
-	--c-black: #000;
+	/* Colors */
+	--c-black: #333;
 	--c-white: #fff;
+	--c-orange: #cc4b00;
+	--c-yellow: #ffc700;
+	--c-light-blue: #006ef5;
+	--c-blue: #004eae;
+	--c-dark-blue: #013371;
+	--c-gray: #767676;
+	--c-light-gray: #f1f1f1;
+	--c-wp-blue: #0073aa;
 
 	/* Widths */
 	--container-width: 1200px;
 	--gutter-width: 20px;
+
+	/* Typography */
+	--forms-size: 1rem;
+	--post-card-content-size: 0.875rem;
+	--post-card-heading-size: 2.25rem;
+	--navigation-size: 1.125rem;
 
 	/* Breakpoints */
 	@custom-media --bp-tiny ( min-width: 25em ); /* 400px */
