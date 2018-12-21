@@ -5,7 +5,7 @@
 }
 
 .primary {
-	min-height: 100vh;
+	min-height: calc(100vh - 258px);
 	padding: 0 var(--gutter-width);
 }
 

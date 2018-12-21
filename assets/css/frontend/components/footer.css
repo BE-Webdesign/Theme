@@ -1,0 +1,6 @@
+.site-footer {
+	background-color: var(--c-light-gray);
+	margin-top: 40px;
+	padding: var(--gutter-width);
+	text-align: center;
+}
