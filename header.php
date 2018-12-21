@@ -22,7 +22,7 @@ $header_tag = is_home() ? 'h1' : 'span';
 		<header id="masthead" class="site-header">
 			<div class="site-header__top-bar">
 				<div class="site-header__container container">
-					<button class="site-header__menu-toggle" id="site-header__menu-toggle">
+					<button class="site-header__menu-toggle" id="site-header__menu-toggle" aria-pressed="false">
 						<?php SVG\icon( 'menu' ); ?>
 						<?php SVG\icon( 'close' ); ?>
 						<span class="screen-reader-text"><?php esc_html_e( 'Toggle navigation menu', 'eats-theme' ); ?></span>
@@ -33,7 +33,7 @@ $header_tag = is_home() ? 'h1' : 'span';
 						<<?php echo esc_html( $header_tag ); ?> class="site-header__logo-text"><?php esc_html_e( 'Eats.', 'eats-theme' ); ?></<?php echo esc_html( $header_tag ); ?>>
 					</a>
 					<div class="site-header__search-container">
-						<button class="site-header__search-toggle" id="site-header__search-toggle">
+						<button class="site-header__search-toggle" id="site-header__search-toggle" aria-pressed="false">
 							<?php SVG\icon( 'search' ); ?>
 							<?php SVG\icon( 'close' ); ?>
 							<span class="screen-reader-text"><?php esc_html_e( 'Toggle search field', 'eats-theme' ); ?></span>
@@ -41,7 +41,7 @@ $header_tag = is_home() ? 'h1' : 'span';
 					</div>
 				</div>
 			</div>
-			<form action="<?php echo esc_url( home_url() ); ?>" class="site-header__search-form" id="site-header__search-form">
+			<form action="<?php echo esc_url( home_url() ); ?>" class="site-header__search-form" id="site-header__search-form" aria-expanded="false">
 				<label class="screen-reader-text" for="site-header__search-input"><?php esc_html_e( 'Enter a search query', 'eats-theme' ); ?></label>
 				<input id="site-header__search-input"
 					class="site-header__search-input"

@@ -73,6 +73,8 @@ function toggle( $el, $focusEl, $slideEl ) {
 
 			$el.toggleClass( 'open' );
 			$slideEl.toggleClass( 'open' );
+			$el.attr( 'aria-pressed', 'true' === $el.attr( 'aria-pressed' ) ? false : true );
+			$slideEl.attr( 'aria-expanded', 'true' === $slideEl.attr( 'aria-expanded' ) ? false : true );
 
 			if ( ! open ) {
 				$focusEl.focus();
