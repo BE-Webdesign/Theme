@@ -89,10 +89,19 @@ function page_container_end() {
 /**
  * Post excerpt generation.
  *
- * Currently used as a placeholder.
+ * Generates a loose excerpt of a post.
  *
+ * @param \WP_Post $post WordPress post object.
  * @return void
  */
-function post_excerpt() {
-	echo 'Content';
+function post_excerpt( $post ) {
+	$content = sanitize_text_field( $post->post_content );
+
+	// Grab first 200 characters.
+	$content = substr( $content, 0, 200 );
+
+	// Add on horizontal ellipse...
+	$content .= '&hellip;';
+
+	echo esc_html( $content );
 }

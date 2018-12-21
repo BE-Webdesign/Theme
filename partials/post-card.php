@@ -7,6 +7,8 @@
 
 use EatsTheme\SVG;
 
+$current_post = get_post();
+
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'post-card' ); ?>>
 	<a href="<?php the_permalink(); ?>" class="post-card__image-link" tabindex="-1" aria-hidden="true">
@@ -34,7 +36,7 @@ use EatsTheme\SVG;
 		</h2>
 
 		<p class="post-card__excerpt">
-			<?php post_excerpt(); ?>
+			<?php post_excerpt( $current_post ); ?>
 		</p>
 
 		<a href="<?php the_permalink(); ?>" class="post-card__more-link" tabindex="-1" aria-hidden="true">
