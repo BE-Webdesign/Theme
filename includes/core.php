@@ -71,7 +71,7 @@ function scripts() {
 	wp_enqueue_script(
 		'frontend',
 		EATS_THEME_TEMPLATE_URL . '/dist/js/frontend.min.js',
-		[],
+		[ 'jquery' ],
 		EATS_THEME_VERSION,
 		true
 	);
